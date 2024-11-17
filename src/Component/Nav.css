@@ -1,0 +1,54 @@
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  ul li {
+    display: inline;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--nav-text-color); /* Sử dụng biến từ chủ đề */
+    transition: color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    color: #ff4081; /* Màu khi hover */
+  }
+  
+  ul li a.active {
+    border-bottom: 2px solid #ff4081; /* Đánh dấu liên kết đang hoạt động */
+  }
+  
+  .switch-mode {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    border: 1px solid #ff4081;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .switch-mode:hover {
+    background-color: #ff4081;
+    color: white;
+  }
+  
+  
